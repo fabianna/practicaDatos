@@ -12,7 +12,7 @@ function filtrarRegion2015() {
 		  
 		  region = datos[i].children[3].textContent;
 		  value = datos[i].children[4].textContent;
-		  str += "[" + region
+		  str += "['" + region + "'"
 		  str += "," + value + "],"
 		  str += "\n"
 		}
