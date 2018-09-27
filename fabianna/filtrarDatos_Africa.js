@@ -10,7 +10,7 @@ function filtrarDatos_Africa() {
 		  
 		  year  = datos[i].children[2].textContent;
 		  value = datos[i].children[4].textContent;
-		  str += "[" + year
+		  str += "[ '" + year + "'" 
 		  str += "," + value + "],"
 		  str += "\n"
 		}
