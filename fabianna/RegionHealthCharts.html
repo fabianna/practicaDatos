@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="Region1990.js"></script> 
+	<script type="text/javascript" src="Region2015.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(draw1990Chart);
+      google.charts.setOnLoadCallback(draw2015Chart);
+      // Call back 1990 Chart.
+      function draw1990Chart() {
+        // Data table for Africa
+        var dataTable = new google.visualization.DataTable();
+        dataTable.addColumn('string', 'Region');
+        dataTable.addColumn('number', 'Number of neonatal deaths (thousands)');
+		
+		x=[]; y=[]; 
+		for (i=0;i<obj1.length;i++) {
+			x[i]=obj1[i][0]; //Region
+			y[i]=obj1[i][1]; //Value
+		dataTable.addRows([[x[i], y[i]]]);
+		}
+        
+         var options = {
+		title: 'Number of neonatal deaths (thousands) in WHO Regions in 1990',
+		hAxis: {title: 'Year'},
+		vAxis: {title: 'Number of neonatal deaths (thousands)'},
+			
+	};
+        var chart = new google.visualization.ColumnChart(document.getElementById('2015_chart_div'));
+        chart.draw(dataTable, options);
+     }
+      // Callback 2015 Chart
+      function draw2015Chart() {
+        var dataTable = new google.visualization.DataTable();
+        dataTable.addColumn('string', 'Region');
+        dataTable.addColumn('number', 'Number of neonatal deaths (thousands)');
+		
+		x1=[]; y1=[]; 
+		for (i=0;i<obj2.length;i++) {
+			x1[i]=obj2[i][0]; //Region
+			y1[i]=obj2[i][1]; //Value
+		dataTable.addRows([[x1[i], y1[i]]]);
+		}
+        
+           var options = {
+		title: 'Number of neonatal deaths (thousands) in WHO Regions in 2015',
+		hAxis: {title: 'Year'},
+		vAxis: {title: 'Number of neonatal deaths (thousands)'},
+			
+	   };
+        var chart = new google.visualization.ColumnChart(document.getElementById('2015_chart_div'));
+        chart.draw(dataTable, options);
+      }
+    </script>
+  </head>
+  <body>
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="1990_chart_div" style="width: 800 px; height: 500 px"></div></td>
+        <td><div id="2015_chart_div" style="width: 800 px; height: 500 px"></div></td>
+      </tr>
+    </table>
+  </body>
+</html>
