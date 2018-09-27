@@ -5,13 +5,10 @@
 	<script type="text/javascript" src="ChildHealth_SouthEastAsia.js"></script>
     <script type="text/javascript">
 
-      // Load Charts and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
 
-      // Africa.
       google.charts.setOnLoadCallback(drawAfricaChart);
 
-      // South-East Asia.
       google.charts.setOnLoadCallback(drawSEAsiaChart);
 
       // Call back Africa Chart.
@@ -29,8 +26,6 @@
 		dataTable.addRows([[x[i], y[i]]]);
 		}
         
-
-        // Options for Africa's chart
          var options = {
 		title: 'Number of neonatal deaths (thousands) in Africa from 1990-2015',
 		hAxis: {title: 'Year'},
@@ -38,15 +33,13 @@
 			
 	};
 
-        // Instantiate and draw the chart for Africa
-        var chart = new google.visualization.ScatterChart(document.getElementById('Africa_chart_div'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('Africa_chart_div'));
         chart.draw(dataTable, options);
-      }
+     }
 
       // Callback SEAsia Chart
       function drawSEAsiaChart() {
 
-        // Create the data table for Anthony's pizza.
         var dataTable = new google.visualization.DataTable();
         dataTable.addColumn('number', 'Year');
         dataTable.addColumn('number', 'Number of neonatal deaths (thousands)');
@@ -58,8 +51,6 @@
 		dataTable.addRows([[x1[i], y1[i]]]);
 		}
         
-
-        // Set options for SEAsia Chart
            var options = {
 		title: 'Number of neonatal deaths (thousands) in South-East Asia from 1990-2015',
 		hAxis: {title: 'Year'},
@@ -67,8 +58,7 @@
 			
 	   };
 
-        // Instantiate and draw the chart for SEAsia.
-        var chart = new google.visualization.ScatterChart(document.getElementById('SEAsia_chart_div'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('SEAsia_chart_div'));
         chart.draw(dataTable, options);
       }
     </script>
