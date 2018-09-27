@@ -1,4 +1,4 @@
-function filtrarDatos() {
+function FiltrarRegion1990() {
     datos = document.getElementsByTagName('table')[0].getElementsByTagName('tr')
     str='[';
     
