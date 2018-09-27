@@ -26,14 +26,17 @@
 		for (i=0;i<obj1.length;i++) {
 			x[i]=obj1[i][0]; //Year
 			y[i]=obj1[i][1]; //Value
-		dataTable.addRows([ [x[i], y[i]] ]);
+		dataTable.addRows([[x[i], y[i]]]);
 		}
         
 
         // Options for Africa's chart
-        var options = {title:'Number of neonatal deaths (thousands) in Africa from 1990-2015',
-                       width:400,
-                       height:300};
+         var options = {
+		title: 'Number of neonatal deaths (thousands) in Africa from 1990-2015',
+		hAxis: {title: 'Year'},
+		vAxis: {title: 'Number of neonatal deaths (thousands)'},
+			
+	};
 
         // Instantiate and draw the chart for Africa
         var chart = new google.visualization.ScatterChart(document.getElementById('Africa_chart_div'));
@@ -52,14 +55,17 @@
 		for (i=0;i<obj2.length;i++) {
 			x1[i]=obj2[i][0]; //Year
 			y1[i]=obj2[i][1]; //Value
-		dataTable.addRows([ [x1[i], y1[i]] ]);
+		dataTable.addRows([[x1[i], y1[i]]]);
 		}
         
 
         // Set options for SEAsia Chart
-        var options = {title:'Number of neonatal deaths (thousands) in South-East Asia from 1990-2015',
-                       width:400,
-                       height:300};
+           var options = {
+		title: 'Number of neonatal deaths (thousands) in South-East Asia from 1990-2015',
+		hAxis: {title: 'Year'},
+		vAxis: {title: 'Number of neonatal deaths (thousands)'},
+			
+	   };
 
         // Instantiate and draw the chart for SEAsia.
         var chart = new google.visualization.ScatterChart(document.getElementById('SEAsia_chart_div'));
