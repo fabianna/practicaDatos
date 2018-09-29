@@ -20,4 +20,5 @@ function leerTop5Cities() {
 	}
     str += "]";
     return str;
+}
 	
