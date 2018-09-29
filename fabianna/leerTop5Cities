@@ -1,7 +1,6 @@
 function leerTop5Cities() {
     datos = document.getElementsByTagName('table')[0].getElementsByTagName('tr')
     str = '[';
-    City, 2014, 2013, 2010, 2005, 2000, 1990
     
     for (i=1;i<6;i++) {
 		  
