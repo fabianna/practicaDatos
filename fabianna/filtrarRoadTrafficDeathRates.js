@@ -3,7 +3,7 @@ function filtrarRoadTrafficDeaths() {
     str='[';
     for (i=1;i<datos.length;i++) {
 		  
-		  country  = datos[i].children[4].textContent;
+		  country  = datos[i].children[4].textContent.replace("'",'');
 		  value = datos[i].children[5].textContent;
 		  str += "['" + country + "'"
 		  str += "," + value + "],"
