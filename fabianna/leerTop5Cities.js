@@ -15,7 +15,7 @@ function leerTop5Cities() {
 	y6 = datos[i].children[2].textContent.replace(',','').replace(',','');
       	
 	str += "['" + city + "'"
-	str += "," + year1990 + "," + year2000 + "," + year2005 + "," + year2010 + "," + year2013 + "," + year2014 + "],"
+	str += "," + y1 + "," + y2 + "," + y3 + "," + y4 + "," + y5 + "," + y6 + "],"
 	str += "\n"
 	
 	}
