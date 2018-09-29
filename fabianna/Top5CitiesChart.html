@@ -9,9 +9,12 @@
       function drawCitiesChart() {
         var dataTable = new google.visualization.DataTable();
         dataTable.addColumn('string','Year');
-          for (i=1;i<obj.length;i++) {
-          dataTable.addColumn('string', obj[i][0]) //City
-          }
+        dataTable.addColumn('number', 'City Population 1990');
+        dataTable.addColumn('number', 'City Population 2000');
+        dataTable.addColumn('number', 'City Population 2005');
+        dataTable.addColumn('number', 'City Population 2010');
+        dataTable.addColumn('number', 'City Population 2013');
+        dataTable.addColumn('number', 'City Population 2014');
 
           year=[]; c1=[]; c2=[]; c3=[]; c4=[]; c5=[];
           for (i=1; i<obj.length;i++) {
