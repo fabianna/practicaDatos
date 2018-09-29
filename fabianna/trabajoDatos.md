@@ -12,7 +12,7 @@
 
 </p> Luego, para poder visualizar los datos, se usa la librería de gráficos de <a href="https://developers.google.com/chart/"> Google Charts </a>, y como mencionado anteriormente, el gráfico de líneas <a href="https://developers.google.com/chart/interactive/docs/gallery/linechart"> (Line Chart) </a> y la gráfica de columnas <a href="https://developers.google.com/chart/interactive/docs/gallery/columnchart"> (Column Chart). </a> </p>
 
-<p> Se pueden visualizar los datos con las gráficas correspondientes clicando en los siguientes enlaces: <a href="https://fabianna.github.io/practicaDatos/fabianna/Top5CitiesColumnChart.html"> Top 5 Cities Column Chart </a> y <a href="https://fabianna.github.io/practicaDatos/fabianna/Top5CitiesLineChart.html"> Top 5 Cities Line Chart </a> </p>. 
+<p> Se pueden visualizar los datos con las gráficas correspondientes clicando en los siguientes enlaces: <a href="https://fabianna.github.io/practicaDatos/fabianna/Top5CitiesColumnChart.html"> Top 5 Cities Column Chart </a> y <a href="https://fabianna.github.io/practicaDatos/fabianna/Top5CitiesLineChart.html"> Top 5 Cities Line Chart. </a> </p> 
   
   
 </html>
