@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="Top5Cities.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawCitiesChart);
+
+      function drawCitiesChart() {
+        var dataTable = new google.visualization.DataTable();
+        dataTable.addColumn('string','Year'):
+          for (i=0;i<obj.length;i++) {
+          dataTable.addColumn('string', obj[i][0]) //City
+          }
+
+          year=[]; c1=[]; c2=[]; c3=[]; c4=[]; c5=[];
+          for (i=1; i<obj.length;i++) {
+            year[i]=obj[0][i];
+            c1[i]=obj[1][i];
+            c2[i]=obj[2][i];
+            c3[i]=obj[3][i];
+            c4[i]=obj[4][i];
+            c5[i]=obj[5][i];
+            dataTable.addRows([[year[i], c1[i], c2[i], c3[i], c4[i], c5[i]]]);
+          }
+
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'New York, Los Angeles, Chicago, Houston and Philadelphia: 1990-2014',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(dataTable, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+  </body>
+</html>
