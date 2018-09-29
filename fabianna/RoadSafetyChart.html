@@ -5,9 +5,9 @@
     	<script type="text/javascript">
 
 	google.charts.load('current', {packages: ['corechart', 'bar']});
-	google.charts.setOnLoadCallback(drawBasic);
+	google.charts.setOnLoadCallback(drawRoadSafetyChart);
 
-	function drawRoadTrafficChart() {
+	function drawRoadSafetyChart() {
 		var dataTable = new google.visualization.DataTable();
 		dataTable.addColumn('string', 'Country');
 		dataTable.addColumn('number', 'Value');
