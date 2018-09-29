@@ -3,7 +3,7 @@
 <h1> Trabajo Gestión de Datos </h1>
 <h4> Fabianna (A905046) </h4>
 
-<p> Se va a leer una publicación de las 50 ciudades estadounidenses más grandes (por población). Se van a escoger las cinco ciudades más grandes, tomando los datos del tamaño de la población de los años disponibles: 1990, 2000, 2005, 2010, 2013, 2014. Luego, estos datos se van a graficar tanto en una gráfica de líneas (LineChart) y gráfica de columnas (ColumnChart), donde se puede visualizar el crecimiento de cada una de las ciudades a lo largo del tiempo, y también comparar el tamaño de las poblaciones de cada ciudad en un año determinado, respectivamente. </p>
+<p> Se va a leer una publicación de las 50 ciudades estadounidenses más grandes (por población). Se van a escoger las cinco ciudades más grandes, tomando los datos del tamaño de la población de los años disponibles: 1990, 2000, 2005, 2010, 2013, 2014. Luego, estos datos se van a graficar en una gráfica de líneas (LineChart) y en una gráfica de columnas (ColumnChart), donde se puede visualizar el crecimiento de cada una de las ciudades a lo largo del tiempo, y también comparar el tamaño de las poblaciones de cada ciudad en un año determinado, respectivamente. </p>
 
 <p> Los datos provienen de la página de Infoplease en el artículo titulado, <a href="https://www.infoplease.com/us/us-cities/top-50-cities-us-population-and-rank"> "50 Cities in the U.S. by Population and Rank". </a> </p>
  
